@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTQ Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="logo">QTQ Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2 class="title">Welcome to QTQ!</h2>
+            <p class="description">Experience the taste of deliciousness with our wide variety of dishes. We offer a warm and inviting atmosphere perfect for any occasion.</p>
+            <img src="images/restaurant-interior.jpg" alt="Restaurant Interior">
+        </section>
+        <section id="menu">
+            <h2 class="title">Our Menu</h2>
+            <div class="menu-items">
+                <div class="item">
+                    <h3>Tandoori Chicken</h3>
+                    <p class="description">Marinated chicken cooked in a clay oven. Tender and flavorful.</p>
+                    <span class="price">$14.99</span>
+                </div>
+                <div class="item">
+                    <h3>Saag Paneer</h3>
+                    <p class="description">Spinach curry with homemade paneer cheese. A vegetarian delight.</p>
+                    <span class="price">$12.50</span>
+                </div>
+                <div class="item">
+                    <h3>Butter Chicken</h3>
+                    <p class="description">Creamy tomato-based curry with succulent chicken pieces. A classic favorite.</p>
+                    <span class="price">$15.99</span>
+                </div>
+                </div>
+            <button onclick="showFullMenu()">View Full Menu</button>
+        </section>
+        <section id="about">
+            <h2 class="title">About QTQ</h2>
+            <p class="description">QTQ Restaurant is a family-owned business established in [Year]. We are passionate about serving authentic and delicious food using fresh, high-quality ingredients. Our friendly staff is dedicated to providing exceptional service and creating a memorable dining experience for our guests.</p>
+        </section>
+        <section id="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; QTQ Restaurant <?php echo date("Y"); ?></p>
+    </footer>
+    <script>
+        // Add functionality to show full menu (optional)
+    </script>
+</body>
+</html>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ff9999;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    padding: 50px;
+}
+
+section {
